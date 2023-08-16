@@ -9,7 +9,7 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
-// import Pictorial from '../../assets/home-main.svg'
+import Pictorial from '../../assets/home-main.svg'
 
 // import Pictorial from '../../assets/Jmagheadshot.jpg'
 
@@ -69,7 +69,7 @@ const About = () => {
               </Col>
               <Col md={4} className="myAvtar">
                 <Tilt>
-                  {/* <img src={Pictorial} className="img-fluid" alt="avatar" /> */}
+                  <img src={Pictorial} className="img-fluid" alt="avatar" />
                 </Tilt>
               </Col>
             </Row>

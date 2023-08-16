@@ -2,7 +2,6 @@ import React, { useRef } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import { AiOutlineDownload } from "react-icons/ai";
-
 import ResumePic from '../assets/Codestackjmag.png';
 import Particle from "../components/skillset/Particle";
 
@@ -10,11 +9,17 @@ import Particle from "../components/skillset/Particle";
 
 
 const Resume = () => {
+    const imageRef = useRef(null);
 
+    const handleDownload = () => {
+        const link = document.createElement("a");
+        link.href = ResumePic;
+        link.download = "ResumeImage.png";
+        link.click();
+      };
 
   return (
 
-   
     <div>
       <Container fluid className="resume-section">
         <Particle />
@@ -22,7 +27,7 @@ const Resume = () => {
           <Button
             variant="primary"
             style={{ maxWidth: "250px" }}
-           
+           onClick={handleDownload}
           >
             <AiOutlineDownload />
             &nbsp;Download Image

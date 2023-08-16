@@ -4,6 +4,7 @@ import { Container } from "react-bootstrap";
 
 import Particle from "../components/skillset/Particle";
 import Techstack from "../components/skillset/Techstack";
+import Toolstack from "./Toolstack";
 
 // import Techstack from "../components/Skillset/Techstack";
 // import Toolstack from "../components/Skillset/Toolstack";
@@ -22,6 +23,7 @@ const Skillset = () => {
         <h1 className="project-heading">
           <strong className="yellow">Tools</strong> I use
         </h1>
+        <Toolstack/>
         {/* <Toolstack /> */}
       </Container>
     </Container>
